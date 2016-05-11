@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         opalanieButton.setOnClickListener(this);
         zwiedzanieButton.setOnClickListener(this);
         sportButton.setOnClickListener(this);
+
         this.setFilters();
         this.createList();
         //button.setColorFilter(Color.argb(100, 51, 153, 255));
