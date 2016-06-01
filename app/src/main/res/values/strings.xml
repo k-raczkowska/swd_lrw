@@ -37,4 +37,7 @@
     <string name="wyznacz2">Wyznacz</string>
     <string name="zapisz">Zapisz</string>
     <string name="egzotyka">Egzotyka</string>
+    <string name="message">Czy na pewno chcesz usunąć?</string>
+    <string name="ok">Usuń</string>
+    <string name="cancel">Anuluj</string>
 </resources>

@@ -34,23 +34,18 @@ public class OptionAdapter extends ArrayAdapter<Option> {
         TextView aktywnosc = (TextView) rowView.findViewById(R.id.aktywnosc);
         TextView lokalizacja = (TextView) rowView.findViewById(R.id.lokalizacja);
         if(options.get(position).getKlimat() != null) {
-            klimat.setText(options.get(position).getKlimat().toString());
+            klimat.setText(options.get(position).getKlimat().getName());
         }
         StringBuilder sb = new StringBuilder();
         for(Aktywnosc akt : options.get(position).getAktywnoscList()){
-            sb.append(akt.toString());
+            sb.append(akt.getName());
         }
         aktywnosc.setText(sb.toString());
         StringBuilder sb2 = new StringBuilder();
         for(Lokalizacja lok : options.get(position).getLokalizacjaList()){
-            sb2.append(lok.toString());
+            sb2.append(lok.getName());
         }
         lokalizacja.setText(sb2.toString());
         return rowView;
-    }
-
-    static class OptionHolder{
-        TextView textView;
-        TextView textView2;
     }
 }
